@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STEEDS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+  </head>
+
+  <body onclick="pausePlay()">
+      <div id="background-image"></div>
+      <h1 class="title">Rate the music you hear</h1>
+      <h2 class="title" style="padding-top:250px; font-size:20px;">Click anywhere to start and stop</h2>
+      <h2 id="status" style="padding-top:280px; font-size:15px;">Paused</h2>
+      <div class="play-box">
+        <audio id="my-audio">
+          <source src="https://d1fqjpzwgmzkf8.cloudfront.net/TheKidsArentAlright.mp3" type="audio/mpeg">
+          browser can't display the audio file
+        </audio>
+      </div>
+
+      <button class="button yes-button" onclick="changePage('T')">👍</button>
+      <button class="button neutral-button" onclick="changePage(' ')">🤷‍♀️</button>
+      <button class="button no-button" onclick="changePage('F')">👎</button>
+  </body>
+</html>

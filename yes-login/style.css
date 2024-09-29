@@ -1,13 +1,54 @@
 @import url(https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap);
 
+#logged_out,
+#logged_in {
+  display: table;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+#logged_in {
+  display: none;
+}
+
 body {
   background-color: blanchedalmond;
-  color: white;
   font-family: 'Inter';
   font-style: normal;
-  text-align: center;
+  color: white;
   background: url("https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
 }
+
+.content {
+  padding-bottom: 64px;
+}
+
+center {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+table {
+  border-collapse: collapse;
+  color: black;
+}
+
+th {
+  font-weight:900;
+  background-color: dimgrey;
+  color: #FFFFFF;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color: white;}
+tr:nth-child(odd){background-color: lightgray;}
 
 h1 {
   font-weight: 400;
@@ -17,6 +58,7 @@ h1 {
 h2 {
   font-weight: 400;
   font-size: 64px;
+  line-height: 155px;
 }
 
 button {

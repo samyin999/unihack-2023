@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>STEEDS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <script src="authentication.js"></script>
+
+  <div id="logged_out">
+    <center>
+      <img class="content" src="https://upload.wikimedia.org/wikipedia/commons/2/26/Spotify_logo_with_text.svg" alt="Spotify Logo" id="spotify_logo">
+      <br>
+      <script>
+        document.write('<a href="' + url + '"><button>Login with Spotify</button></a>');
+      </script>
+    </center>
+  </div>
+  
+  <div id="logged_in">
+    <center>
+      <div class="content">
+        <h1>Your predicted MBTI result is... </h1>
+        <h2 id="MBTI_type"></h2>
+        <table>
+          <tr>
+            <th>Category</th>
+            <th>Likelihood</th>
+          </tr>
+          <tr>
+            <td>Extraversion</td>
+            <td id="E_val"></td>
+          </tr>
+          <tr>
+            <td>Introversion</td>
+            <td id="I_val"></td>
+          </tr>
+          <tr>
+            <td>Intuition</td>
+            <td id="N_val"></td>
+          </tr>
+          <tr>
+            <td>Sensing</td>
+            <td id="S_val"></td>
+          </tr>
+          <tr>
+            <td>Thinking</td>
+            <td id="T_val"></td>
+          </tr>
+          <tr>
+            <td>Feeling</td>
+            <td id="F_val"></td>
+          </tr>
+          <tr>
+            <td>Judging</td>
+            <td id="J_val"></td>
+          </tr>
+          <tr>
+            <td>Perceiving</td>
+            <td id="P_val"></td>
+          </tr>
+        </table>
+      </div>
+      <a href="/unihack-2023"><button>Home</button></a>
+      </center>
+  </div>
+  
+  <script src="calculate_type.js"></script>
+</body>
+
+</html>
